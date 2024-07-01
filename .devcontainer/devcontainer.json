@@ -1,0 +1,15 @@
+{
+    "name": "Rust Development",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "rust-lang.rust-analyzer"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "cargo check",
+    "remoteUser": "root"
+}
